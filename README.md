@@ -1,3 +1,7 @@
+Wire replacement for SAMCUNG AC Remote Controller AR-EC03E/EH03E/EC03M/EH03M
+IR protocol decoding, creating end sending example
+IR protocol enconding for smart house realization
+
 No protocol found for Samsung air condition IR control, so I had to catch communication with IR receiver (38 kHz) and decode it with MCU. I did not gues all bits, but the biggest part of protocol was decoded. For decoding is used PIC18F47K40, sends data throug serial line to terminal for display at PC. Program IRprotokolSamsungAC.X is written in MPLAB X, uses free compiler, has CZECH comments (so translator can be handy).
 IRprotokolSamsungAC.X can decode protocols and after uncomment
 //TransmittPacket(Paket,Delka);
